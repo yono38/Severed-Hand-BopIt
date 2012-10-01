@@ -205,11 +205,9 @@ bool checkMove(){
   		break;
   	case 1: 
   		if (digitalRead(sensor[1][0]) == LOW){
-      			stroke_low++;
-  			return true;
+      	stroke_low++;
   		}  
   		else if (digitalRead(sensor[1][0]) == HIGH){
-  			Serial.println("Stroke low");  		
   			stroke_high++;
   		}
   		if (stroke_high > 1 && stroke_low > 1){
@@ -221,11 +219,9 @@ bool checkMove(){
   		break; 	
   	case 2:
   		if (digitalRead(sensor[2][0]) == LOW){
-      			stroke_low++;
-  			return true;
+      	stroke_low++;
   		}  
   		else if (digitalRead(sensor[2][0]) == HIGH){
-  			Serial.println("Stroke low");  		
   			stroke_high++;
   		}
   		if (stroke_high > 1 && stroke_low > 1){
@@ -237,11 +233,9 @@ bool checkMove(){
   		break; 	
   	case 3:
   		if (digitalRead(sensor[3][0]) == LOW){
-      			stroke_low++;
-  			return true;
+      	stroke_low++;
   		}  
   		else if (digitalRead(sensor[3][0]) == HIGH){
-  			Serial.println("Stroke low");  		
   			stroke_high++;
   		}
   		if (stroke_high > 1 && stroke_low > 1){
@@ -258,8 +252,7 @@ bool checkMove(){
   		break;
   	case 5: 
   		if (digitalRead(sensor[5][0]) == LOW){
-      			stroke_low++;
-  			return true;
+      	stroke_low++;
   		}  
   		else if (digitalRead(sensor[5][0]) == HIGH){
   			Serial.println("Stroke low");  		
